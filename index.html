@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Social Media Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <div class="card">
+                <h3>Total Followers</h3>
+                <p id="followers">1,250</p>
+            </div>
+            <div class="card">
+                <h3>Posts This Month</h3>
+                <p id="postsCount">30</p>
+            </div>
+            <div class="card">
+                <h3>Engagement Rate</h3>
+                <p id="engagementRate">4.5%</p>
+            </div>
+        </section>
+
+        <section id="analytics">
+            <h2>Analytics</h2>
+            <canvas id="analyticsChart"></canvas>
+        </section>
+
+        <section id="posts">
+            <h2>Your Posts</h2>
+            <ul id="postsList">
+                <li>Post 1: Hello World! <button onclick="deletePost(this)">Delete</button></li>
+                <li>Post 2: Learning Web Development! <button onclick="deletePost(this)">Delete</button></li>
+            </ul>
+            <input type="text" id="newPost" placeholder="Write a new post...">
+            <button onclick="addPost()">Add Post</button>
+        </section>
+
+        <section id="settings">
+            <h2>Settings</h2>
+            <p>Manage your account settings here.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Social Media Dashboard. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
